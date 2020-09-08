@@ -16,11 +16,11 @@ Please see the corresponding sections below for details.
 This layer in the checked out branch depends on:
 
 URI: https://git.yoctoproject.org/poky  
-branch: zeus  
+branch: dunfell  
 layers: meta  
 
 URI: https://github.com/tq-systems/meta-tq.git  
-branch: zeus  
+branch: dunfell  
 layers: meta-tq  
 
 This layer additionally contains optional fixes and extensions for other layers
