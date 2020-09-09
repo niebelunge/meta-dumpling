@@ -1,8 +1,6 @@
-IMAGE_LINGUAS_append = " en-us "
-
 LICENSE = "MIT"
 
-inherit distro_features_check
+inherit features_check
 
 IMAGE_INSTALL += "\
     packagegroup-base \
