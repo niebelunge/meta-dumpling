@@ -53,4 +53,4 @@ IMAGE_LINGUAS ?= "de-de en-us"
 # home for root is '/root' and nothing else
 ROOT_HOME ?= "/root"
 
-IMAGE_FSTYPES_append = " ubi tar.gz"
+IMAGE_FSTYPES ?= " tar.gz"
