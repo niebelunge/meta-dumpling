@@ -47,10 +47,12 @@ VIRTUAL-RUNTIME_login_manager = "busybox"
 VIRTUAL-RUNTIME_syslog = ""
 VIRTUAL-RUNTIME_initscripts = ""
 
-# some default locales
+# add some locales per default
 IMAGE_LINGUAS ?= "de-de en-us"
 
 # home for root is '/root' and nothing else
 ROOT_HOME ?= "/root"
 
 IMAGE_FSTYPES ?= " tar.gz"
+
+IMAGE_FSTYPES_append = "${@bb.utils.contains('MACHINE_FEATURES', 'ext4', ' wic', '', d)}"
