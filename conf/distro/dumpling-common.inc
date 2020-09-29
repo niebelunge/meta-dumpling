@@ -56,3 +56,7 @@ ROOT_HOME ?= "/root"
 IMAGE_FSTYPES ?= " tar.gz"
 
 IMAGE_FSTYPES_append = "${@bb.utils.contains('MACHINE_FEATURES', 'ext4', ' wic', '', d)}"
+
+IMAGE_FSTYPES_remove = "ext2.gz.u-boot ext2.gz ext4.gz"
+IMAGE_FSTYPES_remove = "tar.bz2 sdcard.bz2 wic.gz"
+
